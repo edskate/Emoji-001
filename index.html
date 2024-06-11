@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Emojis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela de Emojis</h1>
+    <button id="addEmojiBtn">Adicionar Emoji</button>
+    <table id="emojiTable">
+        <thead>
+            <tr>
+                <th>Emoji</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>😊</td>
+                <td>Sorriso</td>
+                <td>Um rosto sorridente com bochechas coradas</td>
+            </tr>
+            <tr>
+                <td>🎉</td>
+                <td>Festa</td>
+                <td>Um confete comemorativo</td>
+            </tr>
+            <tr>
+                <td>🌟</td>
+                <td>Estrela</td>
+                <td>Uma estrela brilhante</td>
+            </tr>
+            <tr>
+                <td>🍕</td>
+                <td>Pizza</td>
+                <td>Uma fatia de pizza deliciosa</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="formContainer" class="hidden">
+        <h2>Adicionar Novo Emoji</h2>
+        <form id="emojiForm">
+            <label for="emoji">Emoji:</label>
+            <input type="text" id="emoji" name="emoji" required><br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" required><br>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
